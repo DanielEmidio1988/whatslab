@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Main } from "./appStyled"
+import { useState } from "react"
+import Header from "./components/Header/Header";
+import Chatbox from "./components/Chatbox/Chatbox"
+import Footer from "./components/Footer/Footer"
 
 function App() {
+
+  const [messages, setMessages] = useState([]) //Onde armazenará o valor das mensagens enviadas para o chatbox
+  const [person, setPerson] = useState("") //Onde armazena o nome da pessoa que envia a mensagem
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Main>
+      <Header
+      person={person}
+      setPerson={setPerson}/>
+      <Chatbox
+      messages={messages}
+      setMessages={setMessages}/>
+      <Footer
+      person={person}
+      messages={messages}
+      setMessages={setMessages}/>
+      </Main>
+   
+     
     </div>
   );
 }
