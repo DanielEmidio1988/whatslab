@@ -1,12 +1,12 @@
 # Whatslab
 
-![preview](./assets/whatslab.png)
+![preview](./src/assets/whatslab.png)
 
 ## 📄 Descrição
 
 Este projeto foi desenvolvido em React, simulando a página de bate-papo do Whatsapp, registrando o nome do usuário que enviou a mensagem. 
 
-[Clique aqui para acessar](https://danielemidio1988.github.io/Portfolio)
+[Clique aqui para acessar](https://whatslab-rust.vercel.app/)
 
 ## ⚒️ Tecnologias 
 
